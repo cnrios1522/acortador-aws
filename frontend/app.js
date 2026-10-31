@@ -1,5 +1,5 @@
 // IMPORTANTE: reemplaza por la IP pública de tu EC2 ANTES de subir a S3.
-const API_BASE_URL = "http://TU_IP_PUBLICA_EC2:8000";
+const API_BASE_URL = "http://3.93.187.127:8000";
 
 const form = document.getElementById("shorten-form");
 const originalInput = document.getElementById("original-url");
