@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Acortador de enlaces | AWS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="card">
+    <span class="eyebrow">FASTAPI · EC2 · DYNAMODB · S3</span>
+    <h1>Acorta tus enlaces</h1>
+    <p class="subtitle">Pega una dirección web y genera un enlace único mediante UUID.</p>
+
+    <form id="shorten-form">
+      <label for="original-url">URL original</label>
+      <input id="original-url" type="url" placeholder="https://www.example.com/articulo" required autocomplete="url">
+      <button id="submit-btn" type="submit">Generar enlace corto</button>
+    </form>
+
+    <p id="status" class="status" aria-live="polite"></p>
+
+    <section id="result" class="result" hidden>
+      <label for="short-url">Tu enlace corto</label>
+      <div class="result-row">
+        <input id="short-url" type="text" readonly aria-label="Enlace corto generado">
+        <button id="copy-btn" type="button" class="secondary">Copiar</button>
+      </div>
+      <a id="open-link" target="_blank" rel="noopener noreferrer">Abrir enlace y probar redirección</a>
+      <small id="short-code"></small>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

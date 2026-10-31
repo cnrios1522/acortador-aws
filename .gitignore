@@ -1,0 +1,8 @@
+# Nunca subir secretos ni archivos generados
+.env
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.vscode/
+.DS_Store
